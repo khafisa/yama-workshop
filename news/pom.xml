@@ -7,12 +7,26 @@
   </parent>
   <artifactId>news</artifactId>
   
+   <properties>
+		<resteasy.version>3.0.11.Final</resteasy.version>
+		<swagger.version>1.5.0</swagger.version>
+		<jetty.version>9.2.4.v20141103</jetty.version>
+	</properties>
+  
+  
   <dependencies>
   <dependency>
 	<groupId>org.meruvian.yama</groupId>
 	<artifactId>yama-core</artifactId>
     <version>2.0.0.Beta3-SNAPSHOT</version>
   </dependency>
+  
+  <!-- swagger -->
+		<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-jaxrs</artifactId>
+			<version>${swagger.version}</version>
+		</dependency>
   </dependencies>
   
 </project>
